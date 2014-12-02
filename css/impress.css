@@ -56,6 +56,27 @@ body {
   font-family: 'Roboto', Arial, sans-serif;
   min-height: 740px;
 }
+
+.bg-green {
+  background: #2fc23b;
+}
+.bg-green hr {
+  border-color: #36a13f;
+}
+.bg-green .footnote a {
+  color: #36a13f;
+}
+
+.bg-pink {
+  background: #f34a64;
+}
+.bg-pink hr {
+  border-color: #c8364d;
+}
+.bg-pink .footnote a {
+  color: #c8364d;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'PT Serif', georgia, serif;
 }

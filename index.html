@@ -13,7 +13,7 @@
   <link href="css/impress.css" rel="stylesheet" />
 </head>
 
-<body class="impress-not-supported">
+<body id="body" class="impress-not-supported">
 
   <div class="fallback-message">
     <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
@@ -206,7 +206,7 @@
       </div>
     </div>
 
-    <div id="statistics" class="step" data-x="0" data-y="-6800" data-rotate-y="-20" data-scale="1">
+    <div id="statistics" class="step" data-x="0" data-y="-6800" data-rotate="60" data-scale="1">
       <h1 style="font-size: 72px; line-height: 1; margin: 0 0 0 0; font-weight: bold;">Statistics 2013 <small style="color: #777777; font-size: 36px;">Kickstarter</small></h1>
       <hr>
       <ol style="list-style: circle; line-height: 1.6;">
@@ -222,7 +222,7 @@
       </div>
     </div>
 
-    <div id="significant-campaigns" class="step" data-x="0" data-y="-6000" data-rotate-y="40" data-scale="1">
+    <div id="significant-campaigns" class="step" data-x="0" data-y="-5800" data-rotate="60"data-scale="1">
       <h1 style="font-size: 72px; line-height: 1; margin: 0 0 0 0; font-weight: bold;">Significant campaigns</h1>
       <hr>
       <ol style="list-style: circle; line-height: 1.6;">
@@ -252,15 +252,34 @@
         switch (e.keyCode) {
           // I
           case 73:
-            window.location.hash = '#index';
+            window.location.hash = "#index";
             break;
           // O
           case 79:
-            window.location.hash = '#overview';
+            window.location.hash = "#overview";
             break;
           // S
           case 83:
-            window.location.hash = '#splash';
+            window.location.hash = "#splash";
+            break;
+          // Magic
+          case 71:
+            var d = document.getElementById("body");
+            if (d.className.indexOf("bg-green") > -1) {
+              var res = d.className.replace(" bg-green", "");
+              d.className = res;
+            } else {
+              d.className += " bg-green";
+            };
+            break;
+          case 80:
+            var d = document.getElementById("body");
+            if (d.className.indexOf("bg-pink") > -1) {
+              var res = d.className.replace(" bg-pink", "");
+              d.className = res;
+            } else {
+              d.className += " bg-pink";
+            };
             break;
         }
       }
