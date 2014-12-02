@@ -246,6 +246,26 @@
       }
     </script>
 
+    <script type="text/javascript">
+      // Jump to specific slides on keydown
+      document.onkeydown = function(e) {
+        switch (e.keyCode) {
+          // I
+          case 73:
+            window.location.hash = '#index';
+            break;
+          // O
+          case 79:
+            window.location.hash = '#overview';
+            break;
+          // S
+          case 83:
+            window.location.hash = '#splash';
+            break;
+        }
+      }
+    </script>
+
   <script src="js/impress.js"></script>
   <script>impress().init();</script>
 
