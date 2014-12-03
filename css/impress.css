@@ -213,13 +213,13 @@ ul.types {
   -ms-transform:     rotateZ(-4deg) rotateY(10deg) rotateX(10deg);
   -o-transform:      rotateZ(-4deg) rotateY(10deg) rotateX(10deg);
   transform:         rotateZ(-4deg) rotateY(10deg) rotateX(10deg);
-  -webkit-transition: all 2s ease-out;
-     -moz-transition: all 2s ease-out;
-      -ms-transition: all 2s ease-out;
-       -o-transition: all 2s ease-out;
-          transition: all 2s ease-out;
+  -webkit-transition: all 4s ease-out;
+     -moz-transition: all 4s ease-out;
+      -ms-transition: all 4s ease-out;
+       -o-transition: all 4s ease-out;
+          transition: all 4s ease-out;
 }
-.polaroid:hover {
+.step.active .polaroid {
   box-shadow: 20px 20px 30px #999999;
   -webkit-transform: none;
   -moz-transform:    none;
