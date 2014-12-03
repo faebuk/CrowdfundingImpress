@@ -203,6 +203,46 @@ ul.types {
   zoom: 1
 }
 
+.polaroid {
+  background: #ffffff;
+  box-shadow: 10px 10px 20px #777777;
+  padding: 20px 20px 40px 20px;
+  text-align: center;
+  -webkit-transform: rotateZ(-4deg) rotateY(10deg) rotateX(10deg);
+  -moz-transform:    rotateZ(-4deg) rotateY(10deg) rotateX(10deg);
+  -ms-transform:     rotateZ(-4deg) rotateY(10deg) rotateX(10deg);
+  -o-transform:      rotateZ(-4deg) rotateY(10deg) rotateX(10deg);
+  transform:         rotateZ(-4deg) rotateY(10deg) rotateX(10deg);
+  -webkit-transition: all 2s ease-out;
+     -moz-transition: all 2s ease-out;
+      -ms-transition: all 2s ease-out;
+       -o-transition: all 2s ease-out;
+          transition: all 2s ease-out;
+}
+.polaroid:hover {
+  box-shadow: 20px 20px 30px #999999;
+  -webkit-transform: none;
+  -moz-transform:    none;
+  -ms-transform:     none;
+  -o-transform:      none;
+  transform:         none;
+}
+.polaroid img {
+  width: 99%;
+}
+.polaroid .caption {
+  display: inline-block;
+  font-family: 'Indie Flower', Arial, sans-serif;
+  font-size: 48px;
+  line-height: 1;
+  text-shadow: 1px 1px 2px #aaaaaa;
+  -webkit-transform: rotateZ(-4deg);
+  -moz-transform:    rotateZ(-4deg);
+  -ms-transform:     rotateZ(-4deg);
+  -o-transform:      rotateZ(-4deg);
+  transform:         rotateZ(-4deg);
+}
+
 .footnote {
   font-size: 16px;
   text-align: right;
