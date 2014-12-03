@@ -193,6 +193,16 @@ a:focus {
   white-space: nowrap;
 }
 
+ul.types {
+  display: inline-block;
+  list-style-type: none;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin: 60px;
+  padding: 0;
+  zoom: 1
+}
+
 .footnote {
   font-size: 16px;
   text-align: right;
